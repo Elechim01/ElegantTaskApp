@@ -13,6 +13,10 @@
 		C4413C862708F2630029F129 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4413C742708F2610029F129 /* ContentView.swift */; };
 		C4413C872708F2630029F129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4413C752708F2630029F129 /* Assets.xcassets */; };
 		C4413C882708F2630029F129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4413C752708F2630029F129 /* Assets.xcassets */; };
+		C4413C942708F2E10029F129 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4413C932708F2E10029F129 /* Home.swift */; };
+		C4413C962708F34C0029F129 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4413C952708F34C0029F129 /* CustomDatePicker.swift */; };
+		C4413C982708F62C0029F129 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4413C972708F62C0029F129 /* DateValue.swift */; };
+		C4413C9A2708FD9C0029F129 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4413C992708FD9C0029F129 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C4413C7A2708F2630029F129 /* ElegantTaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElegantTaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4413C802708F2630029F129 /* ElegantTaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElegantTaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4413C822708F2630029F129 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		C4413C932708F2E10029F129 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C4413C952708F34C0029F129 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		C4413C972708F62C0029F129 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		C4413C992708FD9C0029F129 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,8 @@
 		C4413C722708F2610029F129 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C4413C922708F2C50029F129 /* Model */,
+				C4413C912708F2BA0029F129 /* View */,
 				C4413C732708F2610029F129 /* ElegantTaskAppApp.swift */,
 				C4413C742708F2610029F129 /* ContentView.swift */,
 				C4413C752708F2630029F129 /* Assets.xcassets */,
@@ -76,6 +86,24 @@
 				C4413C822708F2630029F129 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		C4413C912708F2BA0029F129 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4413C932708F2E10029F129 /* Home.swift */,
+				C4413C952708F34C0029F129 /* CustomDatePicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4413C922708F2C50029F129 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4413C972708F62C0029F129 /* DateValue.swift */,
+				C4413C992708FD9C0029F129 /* Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +204,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4413C962708F34C0029F129 /* CustomDatePicker.swift in Sources */,
 				C4413C852708F2630029F129 /* ContentView.swift in Sources */,
+				C4413C942708F2E10029F129 /* Home.swift in Sources */,
 				C4413C832708F2630029F129 /* ElegantTaskAppApp.swift in Sources */,
+				C4413C9A2708FD9C0029F129 /* Task.swift in Sources */,
+				C4413C982708F62C0029F129 /* DateValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +351,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,7 +381,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
